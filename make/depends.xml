@@ -72,10 +72,10 @@
     <target name="-extract-xerces" unless="xerces.uptodate">
         <unzip src="${xerces.zip}" dest="${xerces.dir}.tmp" />
         <copy todir="${xerces.dir}" flatten="yes">
-            <fileset dir="${xerces.dir}.tmp/xerces-2_9_1">
-                <include name="resolver.jar" />
-		<include name="xercesImpl.jar" />
-		<include name="xml-apis.jar" />
+            <fileset dir="${xerces.dir}.tmp">
+                <include name="**/resolver.jar" />
+		<include name="**/xercesImpl.jar" />
+		<include name="**/xml-apis.jar" />
             </fileset>
         </copy>
         <delete dir="${xerces.dir}.tmp" />
