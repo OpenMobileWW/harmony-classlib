@@ -1,0 +1,53 @@
+Building Classlib for Windows8/Visual Studio 10
+
+I built classpath using a Virtual Box (4.1.10) virt, with Guest Additions
+
+- Install Windows 8
+  Theres a trial version available here:
+  http://windows.microsoft.com/en-US/windows-8/iso
+
+  The license key for the trial verison is:
+  DNJXJ-7XBW8-2378T-X22TX-BKG7J
+
+- Install MVS 10
+  Trial version available here:
+  http://www.microsoft.com/visualstudio/en-us/try
+
+  I booted Windows and installed it from there, instead of trying to download
+  the iso.
+
+- Install Java
+  Get it here:
+  http://www.oracle.com/technetwork/java/javase/downloads/jdk-6u31-download-1501634.html
+
+- Install Ant
+  Installation instructions here:
+  http://ant.apache.org/manual/install.html
+
+  Be sure to set up the env vars, and to run the fetch
+
+- Install ECJ
+  ECJ is the eclipse java compiler.  It needs to be in $ANT_HOME/lib.  Get it here:
+  http://archive.eclipse.org/eclipse/downloads/drops/R-3.6.1-201009090800/ecj-3.6.1.jar
+
+- Install Git
+  Installation guide is here:
+  http://help.github.com/win-set-up-git/
+
+  I allowed Git from the Windows prompt
+
+- Checkout the harmony-classpath repo
+  Clone git@github.com:OpenMobileWW/harmony-classlib.git
+
+- Fetch dependencies
+  ant fetch-depends
+  Should complete successfully
+
+- Build it
+  ant
+  This command needs to be run from the Visual Studio x64 Win64 Command prompt
+
+
+
+
+
