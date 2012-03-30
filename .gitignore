@@ -1,4 +1,6 @@
 *.obj
 *.pdb
 *.res
+*.class
+*.jar
 

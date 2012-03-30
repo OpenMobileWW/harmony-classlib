@@ -1,10 +1,16 @@
-Building Classlib for Windows8/Visual Studio 10
-
+Building Classlib for Windows7/Visual Studio 10
 I built classpath using a Virtual Box (4.1.10) virt, with Guest Additions
+  and Windows8, and also on a Samsung laptop with Windows 7
+  Unfortunately, it does not appear to build with MSVS11, which is
+  where the Metro API SDK is.  This configuration is using dlls from
+  the MSVS11 install.  You'll have to fix them to point to the MSVS10
+  versions, and fix the corresponding md5 sums if you don't want to
+  install MSVS11.
 
-- Install Windows 8
+- Install Windows 7 or 8
   Theres a trial version available here:
-  http://windows.microsoft.com/en-US/windows-8/iso
+  http://windows.microsoft.com/
+  en-US/windows-8/iso
 
   The license key for the trial verison is:
   DNJXJ-7XBW8-2378T-X22TX-BKG7J
